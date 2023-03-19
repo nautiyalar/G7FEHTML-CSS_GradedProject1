@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patient Registration Form</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/labtest.css'>
+
+</head>
+<body>
+	<div class="container">
+		<form>
+		  <table>
+    <tr> 
+      <td><h3> 1. Your Contact Details</h3></td>
+    </tr>
+        <tr>
+      <td>
+        <input type="text" id="name" name="name" placeholder="Full Name">
+      </td>
+      
+      <td>
+        <input type="text" id="patientid" name="patientid"  placeholder="Pateint Id if exist">
+       </td>
+      </tr>
+    
+    <tr>
+      <td>
+        <input type="text" id="contactno" name="contactno" placeholder="Contact Number">
+      </td>
+      
+      <td>
+        <input type="email" id="emailid" name="email"  placeholder="Email Id">
+       </td>
+      </tr>
+    
+      <tr> 
+        <td><h3> 2. Address</h3></td>
+      </tr>
+        
+      <tr>
+        <td>
+          <input type="text"  placeholder="H.No">
+        </td>
+        
+        <td>
+          <input type="text"  placeholder="Street">
+         </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <input type="text"  placeholder="Area">
+          </td>
+        </tr>  
+        <tr> 
+        <td>
+    
+            <h3>District</h3>
+            <select name="District" id="district" required>
+                <option value="">Choose</option>
+                <option value="Delhi West">Delhi West</option>
+                <option value="Delhi South">Delhi South</option>
+                <option value="Delhi East">Delhi East</option>
+            </select>
+          </td>
+        </tr>
+           
+    
+      </tr>  
+      <tr> 
+      <td>
+  
+          <h3>Choose the Test Type</h3>
+          <p>Check atleast one box without fail</p>
+          <input type="checkbox" id="c1" name="option1" value="CBC">
+          <label for="c1">CBC</label>
+          <br>
+          <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+          <label for="c2">Complete Urine</label>
+          <br>
+          <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+          <label for="c3">Lipid Profile</label>
+          <br>
+          <input type="checkbox" id="c4" name="option3" value="Thyroid Stimulating Hormone(TSH)">
+          <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+          <br>
+          <input type="checkbox" id="c4" name="option3" value="Glucose Test">
+          <label for="c3">Glucose Test</label>
+     
+        </td>
+      </tr>
+  
+      <tr> 
+        <td>
+    
+            <h3>Do you want a hard copy of the report also</h3>
+            <input type="radio" id="c5" name="option" value="True" required>
+            <label for="c5">Yes</label>
+            <br>
+            <input type="radio" id="c6" name="option" value="False">
+            <label for="c6">No</label>       
+          
+          </td>
+        </tr>
+
+        <tr> 
+          <td>
+      
+            <h3>Select Your Date  </h3>
+            <input type="date" title="Date" >
+
+            <h3>Select Your Time </h3>
+            <input type="time" id="appt" name="appt">    
+            </td>
+          </tr>
+    <tr> 
+          <td>
+            <button>Reset</button>
+            <button>Submit</button>
+       
+          </td>
+          </tr>
+  
+      
+      </table>
+ 
+    </form>
+
+		<img src="images/lab-test/lab-test.jpg" alt="Patient image">
+	</div>
+</body>
+</html>
